@@ -11,9 +11,6 @@ h1, h2, h3, h4, h5, h6
 .all
 	min-height: 100%
 	position: relative
-.img-responsive 
-	width: 100%
-	height: auto
 .wrapp
 	margin: 0 auto
 	max-width: 1224px
@@ -143,7 +140,7 @@ ul.contacts .skype a
 
 
 .info-section
-	padding: 15px 22px
+	padding: 15px 0px
 	overflow: hidden
 
 .parent:before,
@@ -155,75 +152,78 @@ ul.contacts .skype a
 .parent
 	zoom: 1
 
-.parent .avatar-wrapp, .parent .text-box
+.col-3 
+	width: 33.3%
 	float: left
-	
-.avatar-wrapp
-	width: 215px
-	padding-top: 15px
+	position: relative
 
-.avatar-box
-	margin: 0 auto
-	overflow: hidden
-	border-radius: 100px
-	border: 4px solid #02a4ad
-	height: 140px
-	width: 140px
+.col-3 .col-inner 
+	padding: 5px 20px;
 	text-align: center
+.inner
+	border: 4px solid #0dafc7
+	border-radius: 4px
+	height: 130px
+	overflow: hidden
+	position: relative
 
-.avatar-box img
-	width: 165px
+.hover-iner
+	background: rgba(13,175,199,0.5)
+	position: absolute
+	top: 0px
+	width: 100%
+	height: 100%
+	opacity: 0
 
-.text-box 
-	padding-left: 20px
+.info-section .parent
+	margin-bottom: 20px
 
-.text-box ul 
-	margin: 0
-	padding: 0
-	list-style-type: none
-	font-size: 1.4em
-	color: #4d535a
-
-.text-box ul .named-line
-	font-weight: bold
-	line-height: 2em
-	padding-right: 10px
-
-.text-box ul .named-line:after
-	content: ": "
-
-.nemed-row 
-	display: table
-
-.nemed-row .named-line, .nemed-row .skill
-	display: table-cell
-	vertical-align: text-top
-
-.text-box ul .skills
-	background: url('../img/line-head.png') 50% center
-	padding: 3px
-	margin: 3px 15px
-	color: #fff
+.hover-iner span
+	color: white 
+	padding: 5px
+	margin-left: -0.35em
+	border: 1px solid #fff
 	display: inline-block
+	vertical-align: middle
+	border-radius: 4px
+
+.hover-iner:before
+	content: ''
+	display: inline-block
+	vertical-align: middle
+	height: 100%
+
+.inner:hover .hover-iner 
+	opacity: 1
+	transition: 0.5s
+
+.col-3 .col-inner img
+	max-width: 100%
+	vertical-align: bottom
+
+.col-3 .col-inner a
+	display: block
+	color: #02a4ad
+	text-decoration: none
+	line-height: 1.5em
+
+.col-3 .col-3 .info span
+	line-height: 1.5em
+	font-size: 1.5em
+
+.inner-add
+	border: 1px dashed #0dafc7
+    border-radius: 4px
+    height: 130px
+
+.inner-add div
+	line-height: 75px
+
+.inner-add div img
+	vertical-align: middle
 
 
-.text-box ul .skill
-	width: 200px
 
-.point-icon 
-	padding-left: 60px
-
-.maleta-icon
-	background: url('../img/ico/maleta.png') center left
-
-.head-icon
-	background: url('../img/ico/head.png') center left
-.document-icon
-	background: url('../img/ico/document.png') center left
-
-.point-icon 
-	margin-bottom: 10px
-	background-repeat: no-repeat
 
 footer.wrapp-full 
 	width: 100%
@@ -246,10 +246,5 @@ footer .copiright
 	color: #4d535a
 .main-wrapp 
 	padding-bottom: 145px
-
-
-
-
-
 
 
